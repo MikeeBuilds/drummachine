@@ -55,7 +55,7 @@ function App() {
   function playSound(selector) {
     const audio = document.getElementById(selector);
     audio.play();
-    document.getElementById("display").innerHTML = selector;
+    
   }
 
   return (

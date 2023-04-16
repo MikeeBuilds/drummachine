@@ -1,0 +1,13 @@
+.drum-pads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 5px;
+  background-color: #333;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}

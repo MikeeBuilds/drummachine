@@ -3,14 +3,8 @@ import { useEffect } from "react";
 
 function App() {
   useEffect(() => {
-    document.addEventListener("keydown", (e) => {
-      const key = e.key.toUpperCase();
-      const audio = document.getElementById(key);
-      if (audio) {
-        audio.play();
-      }
-    });
-  }, []);
+
+    
 
 
   const drumPads = [
@@ -55,7 +49,6 @@ function App() {
   function playSound(selector) {
     const audio = document.getElementById(selector);
     audio.play();
-    document.getElementById("display").innerHTML = selector;
   }
 
   return (

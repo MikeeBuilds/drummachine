@@ -1,18 +1,6 @@
 import "./App.css";
-import { useEffect } from "react";
 
 function App() {
-  useEffect(() => {
-    document.addEventListener("keydown", (e) => {
-      const key = e.key.toUpperCase();
-      const audio = document.getElementById(key);
-      if (audio) {
-        audio.play();
-      }
-    });
-  }, []);
-
-
   const drumPads = [
     {
       text: "Q",
@@ -44,18 +32,12 @@ function App() {
     },
     {
       text: "X",
-      src: "https://s3.amazonaws.com/freecodecamp/drums/RP4_KICK_1.mp3",
-    },
-    {
-      text: "C",
-      src: "https://s3.amazonaws.com/freecodecamp/drums/Cev_H2.mp3",
-    },
+      
   ];
 
   function playSound(selector) {
     const audio = document.getElementById(selector);
     audio.play();
-    document.getElementById("display").innerHTML = selector;
   }
 
   return (

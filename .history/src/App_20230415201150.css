@@ -1,0 +1,12 @@
+.drum-pads {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.App {
+  display: flex;
+  margin-top: 33vh;
+  justify-content: center;
+}
+
+.drum-pad
